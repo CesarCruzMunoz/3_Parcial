@@ -1,27 +1,25 @@
-<? php
+<?php
 
-$host = " localhost:3306";
-$user = "root";
-$pass = "";
-$db = "proyecto";
-$table = "usuarios";
+$conexion = mysqli_connect("localhost", "root", "", "web");
 
-$password = $_POST['pass1'];
-$correo = $_POST['correo'];
+//Recibimos datos del html
+$correo = $_POST["correo"];
+$clave = $_POST["pass1"];
+$clave2 = $_POST["pass2"];
 
-$conexion = mysqli_connect("localhost:3306", "root", "", "proyecto");
 
-$insert = "INSERT INTO usuarios (correo, password) VALUES('$correo', '$password')";
+if ($clave==$clave2){
+	$insertar = "INSERT INTO usuarios (correo, password) VALUES ('$correo', '$clave')";
 
-$consulta = mysqli_query($conexion, $insert);
+	//guardar en BD
+	$resultado = mysqli_query($conexion, $insertar);
 
-if (!$consulta){
-	echo "ERROR";
 }
 else{
-	echo "OK";
+	
 }
 
-mysqli_close($conexion);
+//Cerrar conexion
+mysqli_close($conexion)
 
 ?>
