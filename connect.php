@@ -16,7 +16,7 @@ if ($clave==$clave2){
 
 }
 else{
-	
+	header('location: registro.php');
 }
 
 //Cerrar conexion

@@ -4,8 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><!-- Para que el texto pueda leer símbolos como la ñ y los acentos-->
 	<meta name="description" content=" Primer Proyecto de Programación Web">
 	<meta name="keywords" content="Universidad">
-	<title>LogIn</title>
-	<link rel="stylesheet" href="css/estilos.css">
+	<title>Register</title>
+	<link rel="stylesheet" href="css/forum.css">
 
 </head>
 
@@ -26,18 +26,26 @@
 	
 	<br></br>
 	<br></br>
-	<br></br>
-	<br></br>
-	<br></br>
-	<div id="formulario">
-		<form action="">
-			<h1>Log In</h1>
-			<form name="form" method="post"><!-- Usamos el metodo post para enviar información-->
-			<input type="text" placeholder="Usuario" name="Usuario" id="usuario">
-			<input type="password" placeholder="Password" name="Password" id="password">
-			<input type="button" id="send" value="Acceder" onclick="validacion();"> <!-- Botón de acceder y llamamos a la función validad cuando se haga click sobre el botón-->
-		</form>
-	</div>
+
+	<h1>Log In</h1>
+
+	 <form action="validacion.php" method="post" class="form-register"> 
+	<!--<form class="form-register"> !-->
+		<h2 class="form_titulo">
+			Inicio Sesion
+		</h2>
+
+		<div class="contenedor-inputs">
+			<input type="text" id="usuario" name="usuario" placeholder="usuario" class="input-100">
+			<input type="password" id="password" name="password" placeholder="password" class="input-100">
+			<input type="submit" value="Acceder" class="btn-enviar">
+		</div>
+
+	</form>
+
+	<footer>
+		<p></p>
+	</footer>
 	
 </body>
 </html>

@@ -1,16 +1,17 @@
 <?php
 
-$usuario = $_POST[nombre];
-$pass = $_POST[password];
+$correo = $_POST["usuario"];
+$pass = $_POST["password"];
 
-//print $usuario;
+//$conexion = mysqli_connect("localhost", "root", "", "web");
  
-if (($usuario==Cesar) && ($pass==lomitos)){
-echo "Felicidades";
-exit();
+if (($correo=='Cesar') && ($pass=='lomitos')){
+	echo "Felicidades";
+	exit();
 }
 else{
-echo "Falla";
-exit();
+	echo "Falla";
+	exit();
 }
+
 ?>
