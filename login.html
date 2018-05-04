@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><!-- Para que el texto pueda leer símbolos como la ñ y los acentos-->
+	<meta name="description" content=" Primer Proyecto de Programación Web">
+	<meta name="keywords" content="Universidad">
+	<title>LogIn</title>
+	<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+
+	<br></br>
+
+	<header>
+		<div id="menu">
+			<ul> <!-- Agregar etiqueta li -->
+					<a href="index.html"> Index </a>
+					<a href="login.html""> Log In </a>
+					<a href="registro.html"> Register </a>
+			</ul>
+		</div>
+	</header>
+	
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<div id="formulario">
+		<form action="">
+			<h1>Log In</h1>
+			<form name="form" method="post"><!-- Usamos el metodo post para enviar información-->
+			<input type="text" placeholder="Usuario" name="Usuario" id="usuario">
+			<input type="password" placeholder="Password" name="Password" id="password">
+			<input type="button" id="send" value="Acceder" onclick="validacion();"> <!-- Botón de acceder y llamamos a la función validad cuando se haga click sobre el botón-->
+		</form>
+	</div>
+	
+</body>
+</html>

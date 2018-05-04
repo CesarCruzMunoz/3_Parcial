@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cesar Cruz</title>
+	<link rel="stylesheet" href="css/forum.css"> <!-- Vincular al archivo css-->
+
+</head>
+
+<body>
+
+	<h1>Formulario de Registro</h1>
+
+	<!-- <form action="registrar.php" method="post" class="form-register";"> !-->
+	<form class="form-register">
+		<h2 class="form_titulo">
+			Registro de cuenta
+		</h2>
+
+		<div class="contenedor-inputs">
+			<input type="email" id="correo" name="correo" placeholder="Correo" class="input-100">
+			<input type="password" id="pass1" name="pass1" placeholder="Contraseña" class="input-48">
+			<input type="password" id="pass2" name="pass2" placeholder="Repite Contraseña" class="input-48">
+			<input type="submit" value="Crear" class="btn-enviar" onclick= "validar();">
+			<p class="form_link">¿Ya tienes una cuenta? <a href="#"> Ingresa aqui</a></p>
+		</div>
+		
+	</form>
+
+			<script>
+	 			function confirmar()
+	 			{
+	 				var pass1= document.getElementById('pass1');
+	 				var pass2= document.getElementById('pass2');
+	 				var message= document.getElementById('mensaje');
+
+	 				if (pass1.value == pass2.value){
+	 				}
+	 				else{
+	 					alert("Las contraseñas no son iguales")
+	 				}
+	 			}
+
+	 			function validar(){
+	 				var email= document.getElementById('correo');
+	 				var pass1= document.getElementById('pass1');
+	 				var pass2= document.getElementById('pass2');
+
+	 				if (email==""){
+	 					aler("Campo correo vacio");
+	 					return false;
+	 				}
+
+	 				var minusculas= /[a-z]/g;
+	 				if (!(pass1.value.match(minusculas))){
+	 					alert("No hay minusculas");
+	 					return false;
+	 				}
+
+	 				var mayusculas= /[A-Z]/g;
+	 				if(!(pass1.value.match(mayusculas))){
+	 					alert("No hay mayusculas");
+	 					return false;
+	 				}
+
+	 				var numeros= /[0-9]/g;
+	 				if(!(pass1.value.match(numeros))){
+	 					alert("No hay numeros");
+	 					return false;
+	 				}
+
+	 				if ((pass1.value.lenght < 8)){
+	 					alert("La contraseña debe tener más de 8 caracteres");
+	 					return false;
+	 				}
+
+	 				var cesp= /[@#$%^&*]/g;
+	 				if (!(pass1.value.match(cesp))){
+	 					alert("La contraseña debe tener caracteres especiales");
+	 					return false;
+	 				}
+
+	 			}
+
+	 		</script>
+
+	<footer>
+		<p>Gracias</p>
+	</footer>
+
+</body>
+</html>
