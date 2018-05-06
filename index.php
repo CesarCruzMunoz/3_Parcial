@@ -5,7 +5,7 @@
 	<meta name="description" content=" Primer Proyecto de Programación Web">
 	<meta name="keywords" content="Universidad">
 	<title>CEJ</title>
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	
 </head>
 
