@@ -5,7 +5,7 @@
 	<meta name="description" content=" Primer Proyecto de Programación Web">
 	<meta name="keywords" content="Universidad">
 	<title>Register</title>
-	<link rel="stylesheet" href="css/forum.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 </head>
 
@@ -17,9 +17,9 @@
 	<header>
 		<div id="menu">
 			<ul> <!-- Agregar etiqueta li -->
-					<a href="index.html"> Index </a>
-					<a href="login.html""> Log In </a>
-					<a href="registro.html"> Register </a>
+					<a href="index.php"> Index </a>
+					<a href="login.php""> Log In </a>
+					<a href="registro.php"> Register </a>
 			</ul>
 		</div>
 	</header>
