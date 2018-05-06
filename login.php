@@ -1,7 +1,3 @@
-<?php
-require 'conexion.php';
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,19 +5,20 @@ require 'conexion.php';
 	<meta name="description" content=" Primer Proyecto de Programación Web">
 	<meta name="keywords" content="Universidad">
 	<title>Register</title>
-	<link rel="stylesheet" href="css/forum.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 </head>
 
 <body>
+
 
 	<br></br>
 
 	<header>
 		<div id="menu">
 			<ul> <!-- Agregar etiqueta li -->
-					<a href="index.php"> Inicio </a>
-					<a href="login.php"> Log In </a>
+					<a href="index.php"> Index </a>
+					<a href="login.php""> Log In </a>
 					<a href="registro.php"> Register </a>
 			</ul>
 		</div>
@@ -32,17 +29,16 @@ require 'conexion.php';
 
 	<h1>Log In</h1>
 
-	 <form action="logval.php" method="post" class="form-register"> 
-	
+	 <form action="validacion2.php" method="post" class="form-register"> 
+	<!--<form class="form-register"> !-->
 		<h2 class="form_titulo">
 			Inicio Sesion
 		</h2>
 
 		<div class="contenedor-inputs">
-			<input type="text" id="email" name="email" placeholder="email" class="input-100" required>
-			<input type="password" id="password" name="password" placeholder="password" class="input-100" required>
-			<input type="submit" value="Acceder" name="submit" class="btn-enviar">
-			<p class="form_link">¿No tienes cuenta? <a href=registro.php> Ingresa aqui</a></p>
+			<input type="email" id="correo" name="correo" placeholder="correo" class="input-100">
+			<input type="password" id="password" name="password" placeholder="password" class="input-100">
+			<input type="submit" value="Acceder" class="btn-enviar">
 		</div>
 
 	</form>
