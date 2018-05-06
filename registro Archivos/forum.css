@@ -5,7 +5,7 @@
 body{
 	margin:0;
 	font-family: sans-serif;
-
+	/*background: #EBF5FB;*/
 }
 
 h1{
@@ -70,9 +70,8 @@ input{
 }
 
 .form_link{
-
 	width: 100%;
-	margin: 7px;
+	margin:7px;
 	text-align: center;
 	font-size: 14px;
 }
@@ -85,7 +84,6 @@ input{
 }
 
 #menu ul a{
-
 	color:white;
 	text-decoration: none; /* Quitar la linea*/
 	font-size: 20px;
