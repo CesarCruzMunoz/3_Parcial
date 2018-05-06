@@ -16,8 +16,8 @@
 	<header>
 		<div id="menu">
 			<ul> <!-- Agregar etiqueta li -->
-				<a href="index.php"> Inicio </a>
-				<a href="login.php"> Log In </a>
+				<a href="index.php"> Index </a>
+				<a href="login.php""> Log In </a>
 				<a href="registro.php"> Register </a>
 			</ul>
 		</div>
@@ -34,15 +34,12 @@
 		<p class="informacion">  
 			Moises Emiliano Arellano Avila
 			<br>
-			Cesar Cruz Muñoz 
+			Cesar Cruz Muñoz
 			<br>
 			Jacob Elias Torres
 		</p>
 		<br></br>
 		
-	</div>
-
-	<div id = "franja">
 	</div>
 
 </body>
