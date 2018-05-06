@@ -4,35 +4,25 @@ require 'conexion.php';
  
 session_start();
 
-$consulta = "SELECT * FROM usuarios";
-$resultado = mysql_query($consulta, $conexion) or die(mysql_error());
-
-$tabla = "<table border='1' cellpadding='10'>\n";
-$tabla .= "<tr><th>ID</th><th>Nombre</th><th>Apellidos</th><th>Dirección</th><th>Localidad</th><th>Edad</th></tr>\n";
-
-while($fila = mysql_fetch_assoc($resultado)){
-$tabla .= "<tr>
-       <td>".$fila["id_cliente"]."</td>
-       <td>".$fila["nombre"]."</td>
-       <td>".$fila["apellidos"]."</td>
-       <td>".$fila["direccion"]."</td>
-       <td>".$fila["localidad"]."</td>
-       <td>".$fila["edad"]."</td>
-      </tr>\n";
-}
-
-mysql_close($conexion);
-
-/*
 if(isset($_POST['submit'])){
 
-	$usuario = "JEC";
-	$password = "lomitos";
+	$mail = $_POST['email'];
+	$pass = $_POST['password'];
 
-	if((isset($_POST['usuario'])) || (isset($_POST['password']))){
+	$sql = "SELECT (email) FROM usuarios WHERE email = '$mail'";
 
-		$use = "JEC";
-		$pas = "lomitos";
+	if(!$check = mysqli_query($conexion, $sql)){
+		
+		return false;
+	}
+
+	$usuario = $mail;
+	$password = $pass;
+
+	if((isset($_POST['email'])) || (isset($_POST['password']))){
+
+		$use = $mail;
+		$pas = $pass;
 		
 		if(($usuario == $use) && ($password == $pas)){
 
@@ -53,6 +43,5 @@ if(isset($_POST['submit'])){
 
 	header("location: login.html");
 }
-*/
 
 ?>

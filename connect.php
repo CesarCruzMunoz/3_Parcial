@@ -2,7 +2,6 @@
 
 require 'conexion.php';
 
-//Recibimos datos del html
 $correo = $_POST["correo"];
 $clave = $_POST["pass1"];
 $clave2 = $_POST["pass2"];
